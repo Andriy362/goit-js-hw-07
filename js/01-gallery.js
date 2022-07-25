@@ -38,13 +38,5 @@ function onPalletClick(evt) {
 		<img src="${evt.target.dataset.source}">
 	`
     )
-    .show(),
-    {
-      onShow: () => {
-        window.addEventListener("keydown", keyEscape);
-      },
-      onClose: () => {
-        window.removeEventListener("keydown", keyEscape);
-      },
-    };
+    .show();
 }
