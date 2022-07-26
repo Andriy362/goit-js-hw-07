@@ -1,9 +1,9 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-const first = document.querySelector(".gallery");
-first.insertAdjacentHTML("beforeend", createImage(galleryItems));
-first.addEventListener("click", notOpenNewPage);
+const refs = document.querySelector(".gallery");
+refs.insertAdjacentHTML("beforeend", createImage(galleryItems));
+refs.addEventListener("click", notOpenNewPage);
 
 function createImage(colors) {
   return colors
